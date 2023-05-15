@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 10px;
+    background-color: brown;
+    height: 2px;
+}
+
+#first-div,
+.block {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    background-color: black;
+}
+
+.btn {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: aqua;
+}
+
+.btn2 {
+    background-color: rgb(10, 145, 145);
+}
+
+.btn3 {
+    background-color: rgb(114, 56, 201);
+}
+
+.btn4 {
+    background-color: rgb(238, 40, 172);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.blocks {
+    display: flex;
+    justify-content: flex-start;
+    height: 120px;
+}
+
+input {
+    margin-left: 10px;
+}
+
+.input-container {
+    display: flex;
+}
+
+#yellow-square {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.container-red-square {
+    display: flex;
+    height: 70px;
+}
+
+#red-square {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: red;
+}
+
+#green-square {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    margin: 10px 10px 0px;
+    background-color: green;
+}
+
+#input-many-images {
+    display: inline-block;
+}
+
+.block-position {
+    padding-left: 5px;
+    width: 250px;
+    color: aliceblue;
+    background-color: blue;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+.block-onload {
+    display: block;
+    height: auto;
+    margin-left: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(36, 11, 59);
+    background-color: antiquewhite;
+}
+
+.big-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-block {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.btn-up {
+    display: none;
+    font-size: 20px;
+    padding: 5px;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    position: fixed;
+    top: 650px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#gray-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-drag-drop {
+    display: flex;
+    align-items: center;
+    background-color: #c9d0e2;
+    width: 50%;
+    height: 100px;
+    padding: 10px 5px;
+    margin: 0 auto;
+    border: 3px dotted green;
+    border-radius: 10px;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#file-display {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#file-display .file-container {
+    width: 30%;
+}
+
+#file-display img {
+    width: 100%;
+}
+
+.active {
+    border: 3px dashed blue;
+    background-color: aqua;
+}

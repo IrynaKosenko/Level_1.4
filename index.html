@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="first-div">
+
+    </div>
+    <!-- CSS (display: none), т.е. просто навесить стиль на элемент -->
+    <button type="button" class=" btn btn1" onclick="document.getElementById('first-div').style.display='none'">
+        CSS
+    </button>
+    <!-- JS (удаление элемента) -->
+    <button type="button" class="btn btn2" onclick="removeButton2()">
+        JavaScript
+    </button>
+    <!-- CSS+JS (навешивать на элемент класс hidden, а в CSS прописать такие стили чтоб они скрывали всё с классом hidden) -->
+    <button type="button" class="btn btn3" onclick="removeButton3()">
+        CSS + JavaScript
+    </button>
+    <button type="button" class="btn btn4" onclick="toggleButton()">
+        Toggle
+    </button>
+
+    <hr>
+    <div class="blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+    <button type="button" class="btn btn5" onclick="funcForFiveBlocks()">
+        For five blocks
+    </button>
+
+    <hr>
+    <div class="input-container">
+        <input type="text" id="div-input">
+    </div>
+    <button type="button" class="btn btn6" onclick="inputButton(document.getElementById('div-input').value)">
+        Input Button
+    </button>
+
+    <hr>
+    <div id="yellow-square"></div>
+
+    <hr>
+    <div class="container-red-square">
+        <button class=" btn for-red-square"> For red square</button>
+        <div id="red-square" class="hidden"></div>
+    </div>
+
+    <hr>
+    <form action="" name="greenSquare">
+        <input type="text" name="inputGreenSquare" value="">
+        <div id="green-square" class="hidden"></div>
+    </form>
+
+    <hr>
+    <form action="" name="nameURL">
+        <input type="url" name="inputURL" value="" required placeholder="Input URL">
+        <button type="button" class="btn button-URL"> Enter URL </button>
+        <div id="">
+            <img id="image" src="" alt="">
+        </div>
+    </form>
+
+    <hr>
+    <form action="" name="formForManyImages">
+        <input type="url" name="inputManyImages" placeholder="Input URL" value="">
+        <div id="input-many-images" style="display: block;"> </div>
+    </form>
+
+    <div class=" block block-position">
+        <p class="parag-position-1"> </p>
+        <p class="parag-position-2"> </p>
+        <p class="parag-lang"> </p>
+        <p class="parag-position-3"> </p>
+    </div>
+
+    <hr>
+    <div class="blocks" style="height: auto;">
+        <div id="div-localStorage" class="block-onload" contenteditable="true">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reiciendis eum at sapiente praesentium ipsa
+            tempore ad similique eos? Reprehenderit id tempore, sapiente sit nesciunt vitae odio culpa iure quae!
+        </div>
+        <div id="div-cookies" class="block-onload" contenteditable="true"> </div>
+        <div id="div-sessionStorage" class="block-onload" contenteditable="true"> Lorem ipsum</div>
+    </div>
+
+    <hr>
+    <button class="btn-up"> На гору</button>
+
+    <hr>
+    <div class="block big-block">
+        <div class="block small-block">
+
+        </div>
+    </div>
+
+    <hr>
+    <button class="btn gray-block">Gray block</button>
+    <div id="gray-block">
+
+    </div>
+
+    <hr>
+    <form>
+        <input type="submit" value="GO" id="input-go" style="width: 70px; height: 30px;">
+        Prevent Default
+    </form>
+
+    <hr>
+    <div class="container-drag-drop">
+        <input type="file" name="inputFile" id="input-for-file" multiple accept="image/*">
+        <label for="input-for-file">
+            <i class="fa-solid fa-upload"></i>&nbsp; 
+            Choose or Drop File</label>
+    </div>
+    <div id="file-display"></div>
+
+    <div style="margin-bottom: 100px;"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
